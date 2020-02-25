@@ -7,7 +7,7 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
-import android.provider.MediaStore
+import android.provider.MediaStore.Images.Media.getBitmap
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Target
@@ -29,7 +29,7 @@ class KropActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_krop)
         uri = Uri.parse(intent.getStringExtra("uri"))
-        val bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
+        val bitmap = getBitmap(this.contentResolver, uri)
 
         krop_view.setBitmap(bitmap)
 
