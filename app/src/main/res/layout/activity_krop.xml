@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KropActivity">
+
+    <com.avito.android.krop.KropView
+        android:id="@+id/krop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        app:krop_aspectX="1"
+        app:krop_aspectY="1"
+        app:krop_offset="24dp"
+        app:krop_overlayColor="#aaffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.avito.android.krop.KropView>
+
+    <Button
+        android:id="@+id/btnCropped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Cropped"
+        app:layout_constraintBottom_toTopOf="@+id/krop_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
