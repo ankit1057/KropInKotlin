@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KropActivity">
+    >
 
     <com.avito.android.krop.KropView
         android:id="@+id/krop_view"
@@ -14,7 +14,7 @@
         app:krop_aspectX="1"
         app:krop_aspectY="1"
         app:krop_offset="24dp"
-        app:krop_overlayColor="#aaffffff"
+        app:krop_overlayColor="#aa000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
